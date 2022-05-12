@@ -9,8 +9,6 @@ const react_1 = __importDefault(require("react"));
 const core_1 = require("@material-ui/core");
 const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
-const MomentTzBindings_1 = require("./MomentTzBindings");
-(0, MomentTzBindings_1.setTz)("Asia/Muscat");
 const TimePickerBinding = () => {
     let time;
     let [date, setdate] = react_1.default.useState(time);

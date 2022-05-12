@@ -3,5 +3,5 @@ declare type Props = {
     handleDateChange: any;
     tz: string;
 };
-export declare const TimePickerBinding: ({ date, handleDateChange, tz }: Props) => JSX.Element;
+export declare const TimePickerBinding: ({ tz }: Props) => JSX.Element;
 export {};

@@ -10,7 +10,7 @@ const moment_timezone_1 = __importDefault(require("moment-timezone"));
 const core_1 = require("@material-ui/core");
 const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
-const TimePickerBinding = ({ tz }) => {
+const TimePickerBinding = () => {
     moment_timezone_1.default.tz.setDefault("Asia/Kolkata");
     let time;
     let [date, setdate] = react_1.default.useState(time);

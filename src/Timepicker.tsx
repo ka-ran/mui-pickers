@@ -10,7 +10,7 @@ type Props = {
   tz: string;
 };
 
-export const TimePickerBinding = ({ tz }: Props) => {
+export const TimePickerBinding = () => {
   momentTimezone.tz.setDefault("Asia/Kolkata");
   let time: any;
   let [date, setdate] = React.useState(time);

@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const TimePickerBinding = ({ date, handleDateChange, tz }: Props) => {
-  momentTimezone.tz.setDefault(tz);
+  momentTimezone.tz.setDefault("Asia/Kolkata");
   /* let time: any;
   let [date, setdate] = React.useState(time);
   console.log(date);
@@ -19,6 +19,7 @@ export const TimePickerBinding = ({ date, handleDateChange, tz }: Props) => {
     console.log(d.valueOf());
     setdate(d);
   }; */
+  console.log(date && date.valueOf());
 
   return (
     <LocalizationProvider dateAdapter={MomentAdapter}>

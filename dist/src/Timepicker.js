@@ -10,7 +10,7 @@ const core_1 = require("@material-ui/core");
 const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
 const TimePickerBinding = ({ date, handleDateChange, tz }) => {
-    moment_timezone_1.default.tz.setDefault(tz);
+    moment_timezone_1.default.tz.setDefault("Asia/Kolkata");
     /* let time: any;
     let [date, setdate] = React.useState(time);
     console.log(date);
@@ -18,6 +18,7 @@ const TimePickerBinding = ({ date, handleDateChange, tz }) => {
       console.log(d.valueOf());
       setdate(d);
     }; */
+    console.log(date && date.valueOf());
     return ((0, jsx_runtime_1.jsx)(pickers_1.LocalizationProvider, Object.assign({ dateAdapter: moment_1.default }, { children: (0, jsx_runtime_1.jsx)(pickers_1.TimePicker, { renderInput: (props) => (0, jsx_runtime_1.jsx)(core_1.TextField, Object.assign({}, props, { label: "test" })), value: date === undefined ? null : date, onChange: (date) => date && handleDateChange(date), ampm: false, className: "timepicker-root" }) })));
 };
 exports.TimePickerBinding = TimePickerBinding;

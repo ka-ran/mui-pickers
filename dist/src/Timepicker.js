@@ -5,10 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TimePickerBinding = void 0;
 const jsx_runtime_1 = require("react/jsx-runtime");
+const moment_timezone_1 = __importDefault(require("moment-timezone"));
 const core_1 = require("@material-ui/core");
 const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
-const TimePickerBinding = ({ date, handleDateChange }) => {
+const TimePickerBinding = ({ date, handleDateChange, tz }) => {
+    moment_timezone_1.default.tz.setDefault(tz);
     /* let time: any;
     let [date, setdate] = React.useState(time);
     console.log(date);

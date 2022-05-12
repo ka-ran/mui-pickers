@@ -7,9 +7,11 @@ import MomentAdapter from "@material-ui/pickers/adapter/moment";
 type Props = {
   date: any;
   handleDateChange: any;
+  tz: string;
 };
 
-export const TimePickerBinding = ({ date, handleDateChange }: Props) => {
+export const TimePickerBinding = ({ date, handleDateChange, tz }: Props) => {
+  momentTimezone.tz.setDefault(tz);
   /* let time: any;
   let [date, setdate] = React.useState(time);
   console.log(date);

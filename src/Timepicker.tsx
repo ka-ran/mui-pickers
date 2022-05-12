@@ -3,9 +3,6 @@ import momentTimezone from "moment-timezone";
 import { TextField } from "@material-ui/core";
 import { TimePicker, LocalizationProvider } from "@material-ui/pickers";
 import MomentAdapter from "@material-ui/pickers/adapter/moment";
-import { setTz } from "./MomentTzBindings";
-
-setTz("Asia/Muscat");
 
 const TimePickerBinding = () => {
   let time: any;

@@ -4,12 +4,12 @@ import { TextField } from "@material-ui/core";
 import { TimePicker, LocalizationProvider } from "@material-ui/pickers";
 import MomentAdapter from "@material-ui/pickers/adapter/moment";
 
-type Props = {
+/* type Props = {
   date: any;
   handleDateChange: any;
   tz: string;
 };
-
+ */
 export const TimePickerBinding = () => {
   momentTimezone.tz.setDefault("Asia/Kolkata");
   let time: any;

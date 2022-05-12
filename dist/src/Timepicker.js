@@ -8,7 +8,7 @@ const jsx_runtime_1 = require("react/jsx-runtime");
 const core_1 = require("@material-ui/core");
 const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
-const TimePickerBinding = (date, handleDateChange) => {
+const TimePickerBinding = ({ date, handleDateChange }) => {
     /* let time: any;
     let [date, setdate] = React.useState(time);
     console.log(date);

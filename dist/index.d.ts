@@ -1,1 +1,2 @@
-export declare function formatToCurrency(args: number): string;
+import { TimePickerBinding } from "./src/Timepicker";
+export { TimePickerBinding };

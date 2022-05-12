@@ -1,3 +1,2 @@
-export function formatToCurrency(args: number): string {
-  return `$${(args / 100).toFixed(2)}`;
-}
+import { TimePickerBinding } from "./src/Timepicker";
+export { TimePickerBinding }

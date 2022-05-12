@@ -1,2 +1,2 @@
-declare const TimePickerBinding: () => JSX.Element;
+declare const TimePickerBinding: (date: any, handleDateChange: any) => JSX.Element;
 export { TimePickerBinding };

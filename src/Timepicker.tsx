@@ -4,14 +4,14 @@ import { TextField } from "@material-ui/core";
 import { TimePicker, LocalizationProvider } from "@material-ui/pickers";
 import MomentAdapter from "@material-ui/pickers/adapter/moment";
 
-const TimePickerBinding = () => {
-  let time: any;
+const TimePickerBinding = (date: any, handleDateChange: any) => {
+  /* let time: any;
   let [date, setdate] = React.useState(time);
   console.log(date);
   const handleDateChange = (d: momentTimezone.Moment) => {
     console.log(d.valueOf());
     setdate(d);
-  };
+  }; */
 
   return (
     <LocalizationProvider dateAdapter={MomentAdapter}>

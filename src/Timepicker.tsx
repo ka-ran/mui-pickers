@@ -11,7 +11,6 @@ import MomentAdapter from "@material-ui/pickers/adapter/moment";
 };
  */
 export const TimePickerBinding = () => {
-  momentTimezone.tz.setDefault("Asia/Kolkata");
   let time: any;
   let [date, setdate] = React.useState(time);
   console.log(date);

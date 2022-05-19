@@ -12,7 +12,7 @@ type Props = {
 
 export const TimePickerBinding = ({ date, handleDateChange, tz }: Props) => {
   momentTimezone.tz.setDefault(tz);
-  console.log("Timestamp--------->", date.valueOf());
+  console.log("Timestamp--------->", date && date.valueOf());
   /* 
   let time: any;
   let [date, setdate] = React.useState(time);

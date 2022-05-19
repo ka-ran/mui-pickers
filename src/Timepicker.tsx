@@ -5,13 +5,14 @@ import { TimePicker, LocalizationProvider } from "@material-ui/pickers";
 import MomentAdapter from "@material-ui/pickers/adapter/moment";
 
 type Props = {
-  date: any;
+  date: momentTimezone.Moment;
   handleDateChange: any;
   tz: string;
 };
 
 export const TimePickerBinding = ({ date, handleDateChange, tz }: Props) => {
   momentTimezone.tz.setDefault(tz);
+  console.log("Timestamp--------->", date.valueOf());
   /* 
   let time: any;
   let [date, setdate] = React.useState(time);

@@ -11,6 +11,7 @@ const pickers_1 = require("@material-ui/pickers");
 const moment_1 = __importDefault(require("@material-ui/pickers/adapter/moment"));
 const TimePickerBinding = ({ date, handleDateChange, tz }) => {
     moment_timezone_1.default.tz.setDefault(tz);
+    console.log("Timestamp--------->", date.valueOf());
     /*
     let time: any;
     let [date, setdate] = React.useState(time);

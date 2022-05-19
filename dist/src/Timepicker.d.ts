@@ -1,6 +1,7 @@
 /// <reference types="react" />
+import momentTimezone from "moment-timezone";
 declare type Props = {
-    date: any;
+    date: momentTimezone.Moment;
     handleDateChange: any;
     tz: string;
 };
